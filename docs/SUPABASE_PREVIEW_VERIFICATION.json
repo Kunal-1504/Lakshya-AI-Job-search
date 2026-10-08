@@ -1,0 +1,143 @@
+{
+  "date": "2026-10-07",
+  "preview": "https://lakshya-job-search-dur1rootu-kunal-deshmukh.vercel.app",
+  "deployment_id": "dpl_7MUfTr8UH1rq4j1vGV7EQ71GhzHz",
+  "production_switched": false,
+  "historical_data_copied": false,
+  "checks": [
+    {
+      "feature": "Preview frontend reachable",
+      "status": 200,
+      "pass": true,
+      "seconds": 5.61
+    },
+    {
+      "feature": "Preview unauthenticated session rejected clearly",
+      "status": 401,
+      "pass": true,
+      "seconds": 17.71
+    },
+    {
+      "feature": "Supabase-backed sign-up",
+      "status": 201,
+      "pass": true,
+      "seconds": 14.54
+    },
+    {
+      "feature": "Supabase-backed identity",
+      "status": 200,
+      "pass": true,
+      "seconds": 3.51
+    },
+    {
+      "feature": "Supabase-backed settings",
+      "status": 200,
+      "pass": true,
+      "seconds": 2.97
+    },
+    {
+      "feature": "Resume import persisted on Supabase",
+      "status": 200,
+      "pass": true,
+      "seconds": 3.36
+    },
+    {
+      "feature": "Profile read after new request",
+      "status": 200,
+      "pass": true,
+      "seconds": 4.2
+    },
+    {
+      "feature": "Preferences stored on Supabase",
+      "status": 200,
+      "pass": true,
+      "seconds": 4.62
+    },
+    {
+      "feature": "Preferences read after new request",
+      "status": 200,
+      "pass": true,
+      "seconds": 3.79
+    },
+    {
+      "feature": "Empty application tracker",
+      "status": 200,
+      "pass": true,
+      "seconds": 3.17
+    },
+    {
+      "feature": "Excel export",
+      "status": 200,
+      "pass": true,
+      "seconds": 3.17
+    },
+    {
+      "feature": "Preview sign-out",
+      "status": 200,
+      "pass": true,
+      "seconds": 3.17
+    },
+    {
+      "feature": "Preview session revoked",
+      "status": 401,
+      "pass": true,
+      "seconds": 3.13
+    },
+    {
+      "feature": "Supabase-backed password sign-in",
+      "status": 200,
+      "pass": true,
+      "seconds": 26.64
+    },
+    {
+      "feature": "Unknown run field rejected by validator",
+      "status": 422,
+      "pass": true,
+      "seconds": 3.29,
+      "evidence": "Test payload corrected to configure sources through settings"
+    },
+    {
+      "feature": "Supabase-backed password sign-in",
+      "status": 200,
+      "pass": true,
+      "seconds": 17.01
+    },
+    {
+      "feature": "Preview scout source configured",
+      "status": 200,
+      "pass": true,
+      "seconds": 3.75
+    },
+    {
+      "feature": "Preview cloud queue dispatch",
+      "status": 202,
+      "pass": true,
+      "seconds": 16.38
+    },
+    {
+      "feature": "Preview queue progress",
+      "status": 200,
+      "pass": true,
+      "seconds": 3.76
+    },
+    {
+      "feature": "Preview queue progress",
+      "status": 200,
+      "pass": true,
+      "seconds": 3.74
+    },
+    {
+      "feature": "Deployed Supabase queue completes scout run",
+      "pass": true,
+      "status": "completed"
+    },
+    {
+      "feature": "Preview final sign-out",
+      "status": 200,
+      "pass": true,
+      "seconds": 3.36
+    }
+  ],
+  "test_cleanup_verified": true,
+  "note": "Durations include Vercel CLI/protection bypass overhead; the rejected initial run payload was a corrected test-input issue."
+}

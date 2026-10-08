@@ -1,0 +1,23 @@
+# VPS: docker compose -f docker-compose.yml -f docker-compose.production.yml up -d --build
+services:
+  backend:
+    environment:
+      LAKSHYA_COOKIE_SECURE: "true"
+  proxy:
+    image: caddy:2-alpine
+    environment:
+      LAKSHYA_DOMAIN: ${LAKSHYA_DOMAIN:?Set your public domain in .env}
+    ports:
+      - "80:80"
+      - "443:443"
+      - "443:443/udp"
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile:ro
+      - caddy_data:/data
+      - caddy_config:/config
+    depends_on:
+      - frontend
+    restart: unless-stopped
+volumes:
+  caddy_data:
+  caddy_config:

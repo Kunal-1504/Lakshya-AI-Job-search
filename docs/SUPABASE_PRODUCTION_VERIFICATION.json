@@ -1,0 +1,202 @@
+{
+  "verified_on": "2026-10-07",
+  "url": "https://lakshya-job-search.vercel.app",
+  "deployment_id": "dpl_39aCr32uaHe65LrYDTGquchrtS8S",
+  "database_provider": "Supabase Free",
+  "production_switched": true,
+  "historical_data_copied": false,
+  "fresh_start_authorized": true,
+  "old_neon_preserved": true,
+  "disposable_accounts_removed": true,
+  "employer_submissions_attempted": false,
+  "browser_visual_verification": "Unavailable: browser control timed out; public HTTP and queue tests completed.",
+  "checks": [
+    {
+      "feature": "Public frontend",
+      "pass": true,
+      "status": 200,
+      "seconds": 0.77
+    },
+    {
+      "feature": "Unauthenticated session gives 401, not 500",
+      "pass": true,
+      "status": 401,
+      "seconds": 12.8
+    },
+    {
+      "feature": "Unauthenticated settings protected",
+      "pass": true,
+      "status": 401,
+      "seconds": 9.59
+    },
+    {
+      "feature": "Primary account sign-up",
+      "pass": true,
+      "status": 201,
+      "seconds": 1.4
+    },
+    {
+      "feature": "Identity",
+      "pass": true,
+      "status": 200,
+      "seconds": 1.01
+    },
+    {
+      "feature": "Identity matches signed-in account",
+      "pass": true
+    },
+    {
+      "feature": "Cloud settings",
+      "pass": true,
+      "status": 200,
+      "seconds": 14.34
+    },
+    {
+      "feature": "Cloud mode enabled",
+      "pass": true
+    },
+    {
+      "feature": "Resume import",
+      "pass": true,
+      "status": 200,
+      "seconds": 0.59
+    },
+    {
+      "feature": "Resume read on subsequent request",
+      "pass": true,
+      "status": 200,
+      "seconds": 1.48
+    },
+    {
+      "feature": "Resume persistence",
+      "pass": true
+    },
+    {
+      "feature": "Save preferences",
+      "pass": true,
+      "status": 200,
+      "seconds": 13.39
+    },
+    {
+      "feature": "Read preferences",
+      "pass": true,
+      "status": 200,
+      "seconds": 0.53
+    },
+    {
+      "feature": "Preference persistence",
+      "pass": true
+    },
+    {
+      "feature": "Empty application tracker",
+      "pass": true,
+      "status": 200,
+      "seconds": 1.61
+    },
+    {
+      "feature": "Excel export",
+      "pass": true,
+      "status": 200,
+      "seconds": 0.51
+    },
+    {
+      "feature": "Excel file signature",
+      "pass": true
+    },
+    {
+      "feature": "Isolated account sign-up",
+      "pass": true,
+      "status": 201,
+      "seconds": 1.13
+    },
+    {
+      "feature": "Isolated account settings",
+      "pass": true,
+      "status": 200,
+      "seconds": 1.34
+    },
+    {
+      "feature": "Other account cannot see imported resume",
+      "pass": true
+    },
+    {
+      "feature": "Other account has separate preferences",
+      "pass": true
+    },
+    {
+      "feature": "Isolated account sign-out",
+      "pass": true,
+      "status": 200,
+      "seconds": 0.34
+    },
+    {
+      "feature": "Discovery-only queue dispatch",
+      "pass": true,
+      "status": 202,
+      "seconds": 1.13
+    },
+    {
+      "feature": "Background discovery progress",
+      "pass": true,
+      "status": 200,
+      "seconds": 0.47
+    },
+    {
+      "feature": "Background discovery progress",
+      "pass": true,
+      "status": 200,
+      "seconds": 7.87
+    },
+    {
+      "feature": "Background discovery progress",
+      "pass": true,
+      "status": 200,
+      "seconds": 0.78
+    },
+    {
+      "feature": "Vercel Queue worker completes discovery",
+      "pass": true,
+      "status": "completed"
+    },
+    {
+      "feature": "Sign-out",
+      "pass": true,
+      "status": 200,
+      "seconds": 1.15
+    },
+    {
+      "feature": "Session revoked",
+      "pass": true,
+      "status": 401,
+      "seconds": 0.21
+    },
+    {
+      "feature": "Wrong password rejected",
+      "pass": true,
+      "status": 401,
+      "seconds": 0.55
+    },
+    {
+      "feature": "Password sign-in",
+      "pass": true,
+      "status": 200,
+      "seconds": 0.61
+    },
+    {
+      "feature": "Resume survives sign-out and sign-in",
+      "pass": true,
+      "status": 200,
+      "seconds": 0.41
+    },
+    {
+      "feature": "Resume retained after new session",
+      "pass": true
+    },
+    {
+      "feature": "Final sign-out",
+      "pass": true,
+      "status": 200,
+      "seconds": 0.27
+    }
+  ]
+}

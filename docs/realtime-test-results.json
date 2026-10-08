@@ -1,0 +1,738 @@
+{
+  "tested_date": "2026-10-07",
+  "timezone": "Asia/Kolkata",
+  "site": "https://lakshya-job-search.vercel.app",
+  "live_api": {
+    "checks": 113,
+    "passed": 109,
+    "failed": 4,
+    "results": [
+      {
+        "feature": "Unauthenticated business access blocked",
+        "pass": true,
+        "seconds": 0.55,
+        "evidence": "HTTP 401"
+      },
+      {
+        "feature": "Weak password rejected",
+        "pass": true,
+        "seconds": 0.25,
+        "evidence": "HTTP 422"
+      },
+      {
+        "feature": "Wrong password rejected",
+        "pass": true,
+        "seconds": 0.61,
+        "evidence": "HTTP 401"
+      },
+      {
+        "feature": "Live sign-in",
+        "pass": true,
+        "seconds": 12.34,
+        "evidence": "HTTP 200"
+      },
+      {
+        "feature": "Secure HttpOnly session cookie",
+        "pass": true,
+        "evidence": "Cookie attributes inspected"
+      },
+      {
+        "feature": "Duplicate email rejected",
+        "pass": true,
+        "seconds": 0.67,
+        "evidence": "HTTP 409"
+      },
+      {
+        "feature": "Identity",
+        "pass": true,
+        "seconds": 1.65,
+        "evidence": "HTTP 200"
+      },
+      {
+        "feature": "Initial jobs empty",
+        "pass": true,
+        "seconds": 0.39,
+        "evidence": "HTTP 200"
+      },
+      {
+        "feature": "Cloud profile persisted",
+        "pass": true,
+        "seconds": 0.48,
+        "evidence": "HTTP 200"
+      },
+      {
+        "feature": "Cross-site write rejected",
+        "pass": true,
+        "seconds": 0.15,
+        "evidence": "HTTP 403"
+      },
+      {
+        "feature": "Operator setting change blocked",
+        "pass": true,
+        "seconds": 0.35,
+        "evidence": "HTTP 422"
+      },
+      {
+        "feature": "Invalid application cap blocked",
+        "pass": true,
+        "seconds": 0.3,
+        "evidence": "HTTP 422"
+      },
+      {
+        "feature": "Credential validation",
+        "pass": true,
+        "seconds": 0.52,
+        "evidence": "HTTP 422"
+      },
+      {
+        "feature": "Demo run blocked in production",
+        "pass": true,
+        "seconds": 0.34,
+        "evidence": "HTTP 422"
+      },
+      {
+        "feature": "Auto run requires saved policy",
+        "pass": true,
+        "seconds": 0.33,
+        "evidence": "HTTP 422"
+      },
+      {
+        "feature": "Unsupported upload rejected",
+        "pass": true,
+        "seconds": 0.46,
+        "evidence": "HTTP 422"
+      },
+      {
+        "feature": "Broken PDF rejected",
+        "pass": false,
+        "seconds": 0.31,
+        "evidence": "HTTP 503 {\"detail\":\"Your workspace is busy or temporarily unavailable. Please try again.\"}"
+      },
+      {
+        "feature": "PDF resume import",
+        "pass": true,
+        "seconds": 0.42,
+        "evidence": "HTTP 200"
+      },
+      {
+        "feature": "DOCX resume import",
+        "pass": true,
+        "seconds": 0.49,
+        "evidence": "HTTP 200"
+      },
+      {
+        "feature": "TXT resume import",
+        "pass": true,
+        "seconds": 0.38,
+        "evidence": "HTTP 200"
+      },
+      {
+        "feature": "Oversize upload rejected",
+        "pass": true,
+        "seconds": 2.38,
+        "evidence": "HTTP 413"
+      },
+      {
+        "feature": "Screening answer save",
+        "pass": true,
+        "seconds": 0.39,
+        "evidence": "HTTP 200"
+      },
+      {
+        "feature": "Screening answer update",
+        "pass": true,
+        "seconds": 0.6,
+        "evidence": "HTTP 200"
+      },
+      {
+        "feature": "Screening answer persisted",
+        "pass": true,
+        "seconds": 0.39,
+        "evidence": "HTTP 200"
+      },
+      {
+        "feature": "Credential stored",
+        "pass": true,
+        "seconds": 0.43,
+        "evidence": "HTTP 200"
+      },
+      {
+        "feature": "Credential hidden in settings",
+        "pass": true,
+        "seconds": 0.4,
+        "evidence": "HTTP 200"
+      },
+      {
+        "feature": "Live readiness",
+        "pass": true,
+        "seconds": 0.42,
+        "evidence": "HTTP 200"
+      },
+      {
+        "feature": "Account Gmail not silently connected",
+        "pass": true,
+        "seconds": 0.46,
+        "evidence": "HTTP 409"
+      },
+      {
+        "feature": "Missing job returns 404",
+        "pass": true,
+        "seconds": 0.35,
+        "evidence": "HTTP 404"
+      },
+      {
+        "feature": "Missing application returns 404",
+        "pass": true,
+        "seconds": 0.35,
+        "evidence": "HTTP 404"
+      },
+      {
+        "feature": "Missing run returns 404",
+        "pass": true,
+        "seconds": 0.33,
+        "evidence": "HTTP 404"
+      },
+      {
+        "feature": "Second-account signup",
+        "pass": true,
+        "seconds": 0.71,
+        "evidence": "HTTP 201"
+      },
+      {
+        "feature": "Second-account data isolation",
+        "pass": true,
+        "seconds": 0.38,
+        "evidence": "HTTP 200"
+      },
+      {
+        "feature": "Second-account answer isolation",
+        "pass": true,
+        "seconds": 0.35,
+        "evidence": "HTTP 200"
+      },
+      {
+        "feature": "Real job search dispatched",
+        "pass": true,
+        "seconds": 1.52,
+        "evidence": "HTTP 202"
+      },
+      {
+        "feature": "Concurrent pipeline rejected",
+        "pass": true,
+        "seconds": 15.51,
+        "evidence": "HTTP 409"
+      },
+      {
+        "feature": "Pause request",
+        "pass": true,
+        "seconds": 1.64,
+        "evidence": "HTTP 200"
+      },
+      {
+        "feature": "Pause persisted",
+        "pass": true,
+        "seconds": 0.58,
+        "evidence": "HTTP 200"
+      },
+      {
+        "feature": "Live event stream",
+        "pass": true,
+        "seconds": 0.47,
+        "evidence": "HTTP 200"
+      },
+      {
+        "feature": "Resume paused search",
+        "pass": true,
+        "seconds": 0.53,
+        "evidence": "HTTP 200"
+      },
+      {
+        "feature": "Real search finished after resume",
+        "pass": true,
+        "evidence": "completed"
+      },
+      {
+        "feature": "Real listings without demo",
+        "pass": true,
+        "seconds": 0.39,
+        "evidence": "HTTP 200"
+      },
+      {
+        "feature": "Job detail",
+        "pass": true,
+        "seconds": 0.5,
+        "evidence": "HTTP 200"
+      },
+      {
+        "feature": "Job text filter",
+        "pass": true,
+        "seconds": 0.4,
+        "evidence": "HTTP 200"
+      },
+      {
+        "feature": "Job source filter",
+        "pass": true,
+        "seconds": 0.5,
+        "evidence": "HTTP 200"
+      },
+      {
+        "feature": "Freshness filter",
+        "pass": true,
+        "seconds": 0.41,
+        "evidence": "HTTP 200"
+      },
+      {
+        "feature": "Fit filter",
+        "pass": true,
+        "seconds": 0.38,
+        "evidence": "HTTP 200"
+      },
+      {
+        "feature": "Stats and dashboard",
+        "pass": true,
+        "seconds": 0.4,
+        "evidence": "HTTP 200"
+      },
+      {
+        "feature": "Agent activity",
+        "pass": true,
+        "seconds": 0.55,
+        "evidence": "HTTP 200"
+      },
+      {
+        "feature": "Excel tracker export",
+        "pass": true,
+        "seconds": 0.5,
+        "evidence": "HTTP 200"
+      },
+      {
+        "feature": "UI preferences saved",
+        "pass": true,
+        "seconds": 0.46,
+        "evidence": "HTTP 200"
+      },
+      {
+        "feature": "Cloud timer enabled",
+        "pass": true,
+        "seconds": 0.39,
+        "evidence": "HTTP 200"
+      },
+      {
+        "feature": "Scheduled cloud search without browser input",
+        "pass": true,
+        "seconds": 21.5,
+        "evidence": "completed"
+      },
+      {
+        "feature": "Scheduled searches can be disabled",
+        "pass": true,
+        "seconds": 0.43,
+        "evidence": "HTTP 200"
+      },
+      {
+        "feature": "Stale job preparation blocked",
+        "pass": true,
+        "seconds": 0.55,
+        "evidence": "HTTP 409"
+      },
+      {
+        "feature": "Demo job preparation blocked",
+        "pass": true,
+        "seconds": 0.55,
+        "evidence": "HTTP 409"
+      },
+      {
+        "feature": "Cross-account job access blocked",
+        "pass": true,
+        "seconds": 0.42,
+        "evidence": "HTTP 404"
+      },
+      {
+        "feature": "Fixture visible in job search",
+        "pass": true,
+        "seconds": 0.42,
+        "evidence": "HTTP 200"
+      },
+      {
+        "feature": "Job-specific cloud tailoring",
+        "pass": true,
+        "evidence": "paused"
+      },
+      {
+        "feature": "Factual critic passed",
+        "pass": true,
+        "seconds": 0.49,
+        "evidence": "HTTP 200"
+      },
+      {
+        "feature": "Original evidence and tailored text visible",
+        "pass": true,
+        "seconds": 0.73,
+        "evidence": "HTTP 200"
+      },
+      {
+        "feature": "pdf download",
+        "pass": true,
+        "seconds": 0.54,
+        "evidence": "HTTP 200"
+      },
+      {
+        "feature": "docx download",
+        "pass": true,
+        "seconds": 0.54,
+        "evidence": "HTTP 200"
+      },
+      {
+        "feature": "cover_note download",
+        "pass": true,
+        "seconds": 0.43,
+        "evidence": "HTTP 200"
+      },
+      {
+        "feature": "report download",
+        "pass": true,
+        "seconds": 0.66,
+        "evidence": "HTTP 200"
+      },
+      {
+        "feature": "Application text filter",
+        "pass": true,
+        "seconds": 0.99,
+        "evidence": "HTTP 200"
+      },
+      {
+        "feature": "Cross-account artifact denied",
+        "pass": true,
+        "seconds": 0.47,
+        "evidence": "HTTP 404"
+      },
+      {
+        "feature": "Unconfirmed sent status blocked",
+        "pass": true,
+        "seconds": 0.43,
+        "evidence": "HTTP 409"
+      },
+      {
+        "feature": "Notes saved",
+        "pass": true,
+        "seconds": 0.51,
+        "evidence": "HTTP 200"
+      },
+      {
+        "feature": "Notes persisted",
+        "pass": true,
+        "seconds": 0.61,
+        "evidence": "HTTP 200"
+      },
+      {
+        "feature": "Stale status conflict rejected",
+        "pass": true,
+        "seconds": 0.51,
+        "evidence": "HTTP 409"
+      },
+      {
+        "feature": "Unreviewed resume cannot resume",
+        "pass": true,
+        "seconds": 0.92,
+        "evidence": "HTTP 409"
+      },
+      {
+        "feature": "Browser approval persisted",
+        "pass": true,
+        "evidence": "approved"
+      },
+      {
+        "feature": "Approved bundle resumes pipeline",
+        "pass": true,
+        "seconds": 1.54,
+        "evidence": "HTTP 200"
+      },
+      {
+        "feature": "Approved manual pipeline completes without submission",
+        "pass": true,
+        "evidence": "completed"
+      },
+      {
+        "feature": "Regeneration dispatched",
+        "pass": true,
+        "seconds": 1.55,
+        "evidence": "HTTP 200, queued; accepted response"
+      },
+      {
+        "feature": "Regenerate actually recreates selected application",
+        "pass": false,
+        "seconds": 0.48,
+        "evidence": "HTTP 200; selected application remained needs_human_review, critic_passed=false; general run did not regenerate selected job"
+      },
+      {
+        "feature": "Browser board move persisted",
+        "pass": true,
+        "seconds": 0.62,
+        "evidence": "HTTP 200"
+      },
+      {
+        "feature": "Reject application in test tracker",
+        "pass": true,
+        "seconds": 0.8,
+        "evidence": "HTTP 200"
+      },
+      {
+        "feature": "Automatic policy and cap saved",
+        "pass": true,
+        "seconds": 0.51,
+        "evidence": "HTTP 200"
+      },
+      {
+        "feature": "Controlled unsupported job prepared under auto policy",
+        "pass": true,
+        "seconds": 0.76,
+        "evidence": "HTTP 202"
+      },
+      {
+        "feature": "Unsupported site remains unsubmitted for review in auto mode",
+        "pass": true,
+        "seconds": 0.51,
+        "evidence": "HTTP 200; application awaiting_approval, no submission reservation; pipeline completed as designed"
+      },
+      {
+        "feature": "Automatic policy can be disabled",
+        "pass": true,
+        "seconds": 0.62,
+        "evidence": "HTTP 200"
+      },
+      {
+        "feature": "Approve checked bundle",
+        "pass": true,
+        "seconds": 0.61,
+        "evidence": "HTTP 200"
+      },
+      {
+        "feature": "Completed automatic run cannot be resumed",
+        "pass": true,
+        "seconds": 0.37,
+        "evidence": "HTTP 409: Run already finished"
+      },
+      {
+        "feature": "Disabling auto prevents submission",
+        "pass": true,
+        "seconds": 0.5,
+        "evidence": "HTTP 200"
+      },
+      {
+        "feature": "Manual confirmation requires explicit true",
+        "pass": true,
+        "seconds": 0.6,
+        "evidence": "HTTP 422"
+      },
+      {
+        "feature": "Controlled manual confirmation tracking",
+        "pass": true,
+        "seconds": 0.53,
+        "evidence": "HTTP 200"
+      },
+      {
+        "feature": "Follow-up draft save",
+        "pass": true,
+        "seconds": 0.6,
+        "evidence": "HTTP 200"
+      },
+      {
+        "feature": "Follow-up draft approval",
+        "pass": true,
+        "seconds": 0.52,
+        "evidence": "HTTP 200"
+      },
+      {
+        "feature": "Track viewed",
+        "pass": true,
+        "seconds": 0.51,
+        "evidence": "HTTP 200"
+      },
+      {
+        "feature": "Track interview_scheduled",
+        "pass": true,
+        "seconds": 0.52,
+        "evidence": "HTTP 200"
+      },
+      {
+        "feature": "Track offer",
+        "pass": true,
+        "seconds": 0.51,
+        "evidence": "HTTP 200"
+      },
+      {
+        "feature": "Timeline keeps user changes",
+        "pass": true,
+        "seconds": 0.43,
+        "evidence": "HTTP 200"
+      },
+      {
+        "feature": "Dashboard response metrics reflect controlled tracking",
+        "pass": true,
+        "seconds": 0.58,
+        "evidence": "HTTP 200"
+      },
+      {
+        "feature": "Application stage filter",
+        "pass": true,
+        "seconds": 1.33,
+        "evidence": "HTTP 200"
+      },
+      {
+        "feature": "Export includes tracked statuses",
+        "pass": true,
+        "seconds": 0.46,
+        "evidence": "HTTP 200"
+      },
+      {
+        "feature": "Stop-test search dispatch",
+        "pass": true,
+        "seconds": 0.98,
+        "evidence": "HTTP 202"
+      },
+      {
+        "feature": "Stop request",
+        "pass": true,
+        "seconds": 0.94,
+        "evidence": "HTTP 200"
+      },
+      {
+        "feature": "Stopped search stays stopped",
+        "pass": true,
+        "evidence": "stopped"
+      },
+      {
+        "feature": "Cannot resume stopped search",
+        "pass": true,
+        "seconds": 0.48,
+        "evidence": "HTTP 409"
+      },
+      {
+        "feature": "Corrupt DOCX rejected clearly",
+        "pass": false,
+        "seconds": 0.39,
+        "evidence": "HTTP 503 {\"detail\":\"Your workspace is busy or temporarily unavailable. Please try again.\"}"
+      },
+      {
+        "feature": "Broken PDF reproducible",
+        "pass": false,
+        "seconds": 0.58,
+        "evidence": "HTTP 503 {\"detail\":\"Your workspace is busy or temporarily unavailable. Please try again.\"}"
+      },
+      {
+        "feature": "Profile survives rejected upload",
+        "pass": true,
+        "seconds": 0.4,
+        "evidence": "HTTP 200"
+      },
+      {
+        "feature": "Final saved preferences persist",
+        "pass": true,
+        "seconds": 0.47,
+        "evidence": "HTTP 200"
+      },
+      {
+        "feature": "Completed history remains available",
+        "pass": true,
+        "seconds": 0.71,
+        "evidence": "HTTP 200"
+      },
+      {
+        "feature": "Final PDF persists across fresh requests",
+        "pass": true,
+        "seconds": 0.45,
+        "evidence": "HTTP 200"
+      },
+      {
+        "feature": "Security headers present",
+        "pass": true,
+        "seconds": 0.2,
+        "evidence": "HTTP 200"
+      },
+      {
+        "feature": "Export opens as valid Excel workbook",
+        "pass": true,
+        "evidence": "1 sheets; 9 rows in first sheet"
+      },
+      {
+        "feature": "PDF is one page and matches DOCX evidence",
+        "pass": true,
+        "evidence": "One A4 page; key source facts agree; PNG inspected without clipping"
+      },
+      {
+        "feature": "Logout succeeds",
+        "pass": true,
+        "seconds": 0.25,
+        "evidence": "HTTP 200"
+      },
+      {
+        "feature": "Revoked session rejected",
+        "pass": true,
+        "seconds": 0.28,
+        "evidence": "HTTP 401"
+      },
+      {
+        "feature": "Second account logout",
+        "pass": true,
+        "seconds": 0.37,
+        "evidence": "HTTP 200"
+      }
+    ]
+  },
+  "additional_current_feed_contracts": [
+    {
+      "feature": "Greenhouse publication dates preserved",
+      "pass": false,
+      "evidence": "Feed returns 210 jobs; first_published=2026-10-02T11:31:50-04:00; 200 normalized, 0 dated"
+    },
+    {
+      "feature": "Lever posting-date availability",
+      "pass": false,
+      "evidence": "2 live samples have createdAt, no publishedAt; normalized dates are missing; publication date provenance needs resolution"
+    },
+    {
+      "feature": "Ashby nullable workplace field",
+      "pass": false,
+      "evidence": "824 jobs available, first workplaceType=None; AttributeError: 'NoneType' object has no attribute 'lower'"
+    }
+  ],
+  "eligibility_reproduction": {
+    "expected": "Excluded because required experience is over 2 years",
+    "actual_min_years": null,
+    "actual_shortlisted": true,
+    "score": 77.99,
+    "reasons": []
+  },
+  "automated_regression": {
+    "python_standard_passed": 52,
+    "python_cloud_passed": 3,
+    "frontend_passed": 8,
+    "gateway_passed": 4,
+    "total_passed": 67
+  },
+  "cleanup": {
+    "verified": true,
+    "accounts_removed": 2,
+    "details": [
+      {
+        "account": "disposable test account",
+        "removed_rows": {
+          "sessions": 0,
+          "cloud_files": 25,
+          "cloud_commands": 57,
+          "users": 1
+        }
+      },
+      {
+        "account": "disposable test account",
+        "removed_rows": {
+          "sessions": 0,
+          "cloud_files": 6,
+          "cloud_commands": 10,
+          "users": 1
+        }
+      }
+    ]
+  },
+  "scope": "No real employer application or email sent; all submission/tracking mutations used synthetic controlled fixtures. Product code unchanged."
+}

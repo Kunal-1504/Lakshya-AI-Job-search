@@ -1,0 +1,42 @@
+{
+  "verified_on": "2026-10-07",
+  "scheduled_cycle_status": "completed",
+  "error_present": false,
+  "source_results": [
+    {
+      "source": "scout:remoteok",
+      "status": "completed",
+      "jobs": 40
+    },
+    {
+      "source": "scout:wwr",
+      "status": "completed",
+      "jobs": 40
+    },
+    {
+      "source": "scout:himalayas",
+      "status": "completed",
+      "jobs": 40
+    },
+    {
+      "source": "scout:greenhouse",
+      "status": "completed",
+      "jobs": 40
+    },
+    {
+      "source": "scout:lever",
+      "status": "completed",
+      "jobs": 23
+    },
+    {
+      "source": "scout:ashby",
+      "status": "completed",
+      "jobs": 40
+    }
+  ],
+  "automatic_applications": {
+    "applied": 0,
+    "needs_help": 1
+  },
+  "preferences_changed": false
+}

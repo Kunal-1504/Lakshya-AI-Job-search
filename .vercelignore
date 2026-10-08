@@ -1,0 +1,16 @@
+.git
+.venv
+**/node_modules
+**/.env*
+**/.vercel
+data
+output
+**/__pycache__
+**/*.egg-info
+.pytest_cache
+.mypy_cache
+.ruff_cache
+docs/SOURCE.md
+
+**/.agents
+**/skills-lock.json

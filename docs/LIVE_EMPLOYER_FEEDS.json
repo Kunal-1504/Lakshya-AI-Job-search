@@ -1,0 +1,26 @@
+{
+  "verified_on": "2026-10-07",
+  "results": [
+    {
+      "source": "lever",
+      "normalized_jobs": 23,
+      "known_publication_dates": 0,
+      "matching_role_location_experience": 0,
+      "matching_within_24h": 0
+    },
+    {
+      "source": "greenhouse",
+      "normalized_jobs": 159,
+      "known_publication_dates": 159,
+      "matching_role_location_experience": 2,
+      "matching_within_24h": 0
+    },
+    {
+      "source": "ashby",
+      "normalized_jobs": 56,
+      "known_publication_dates": 56,
+      "matching_role_location_experience": 1,
+      "matching_within_24h": 0
+    }
+  ]
+}

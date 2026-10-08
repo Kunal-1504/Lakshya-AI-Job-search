@@ -1,0 +1,16 @@
+.git
+.venv
+**/__pycache__
+**/*.egg-info
+**/node_modules
+frontend/dist
+.pytest_cache
+.mypy_cache
+.ruff_cache
+.env
+data
+output
+docs/PHASE_1_SOURCE.md
+
+**/.env*
+**/.vercel

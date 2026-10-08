@@ -1,0 +1,3 @@
+include alembic.ini config.yaml requirements.txt requirements-dev.txt
+recursive-include backend/migrations *.py *.mako
+recursive-include backend/prompts *.md

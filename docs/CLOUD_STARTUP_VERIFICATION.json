@@ -1,0 +1,9 @@
+{
+  "entrypoint": "lakshya.cloud.app:app",
+  "port_listening_seconds": 0.82,
+  "unauthenticated_status": 401,
+  "external_database_required_before_port_bind": false,
+  "startup_regression_tests_passed": 3,
+  "cloud_regression_tests_passed": 14,
+  "optional_cloud_tests_skipped": 3
+}

@@ -1,0 +1,86 @@
+app_name: Lakshya
+environment: development
+data_dir: data
+output_dir: output
+database_url: sqlite:///data/lakshya.sqlite3
+log_file: data/lakshya.jsonl
+timezone: Asia/Kolkata
+cors_origins:
+- http://localhost:5173
+- http://localhost:8080
+target_roles:
+- AI Engineer
+- ML Engineer
+- Software Engineer (AI/ML)
+- Data Analyst
+locations:
+- Pune
+- Bangalore
+- Bengaluru
+- Hyderabad
+- Mumbai
+allow_remote_india: true
+allow_global_remote: true
+freshness_hours: 24
+max_experience_years: 2
+match_threshold: 65
+embedding_model: sentence-transformers/all-MiniLM-L6-v2
+daily_application_cap: 10
+max_applications_per_run: 10
+max_run_tokens: 100000
+max_day_tokens: 500000
+max_run_cost_usd: 5
+max_day_cost_usd: 10
+max_agent_iterations: 3
+request_delay_min_seconds: 3
+request_delay_max_seconds: 6
+follow_up_days: 7
+application_mode: assist
+ai_provider: gemini
+llm_free_tier: true
+llm_request_interval_seconds: 20
+max_run_llm_calls: 16
+max_day_llm_calls: 20
+live_search_enabled: true
+live_search_interval_minutes: 60
+enabled_sources:
+- adzuna
+- remoteok
+- wwr
+- himalayas
+- greenhouse
+- lever
+- ashby
+- recruitee
+boards:
+  greenhouse: []
+  lever: []
+  ashby: []
+  recruitee: []
+public_search:
+  linkedin: []
+  naukri: []
+  indeed: []
+agent_models:
+  scout: ''
+  jd_analyst: gemini-3.5-flash-lite
+  matcher: gemini-3.5-flash-lite
+  tailor: gemini-3.5-flash-lite
+  critic: gemini-3.5-flash-lite
+  orchestrator: ''
+model_prices_per_million:
+  gemini-3.8-flash:
+    input_usd: 0.75
+    output_usd: 3.75
+  claude-haiku-4-5-20251001:
+    input_usd: 1
+    output_usd: 5
+  claude-sonnet-4-6:
+    input_usd: 3
+    output_usd: 15
+  claude-opus-4-6:
+    input_usd: 5
+    output_usd: 25
+  gemini-3.5-flash-lite:
+    input_usd: 0.3
+    output_usd: 2.5

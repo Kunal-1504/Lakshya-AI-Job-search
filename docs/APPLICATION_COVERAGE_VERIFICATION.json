@@ -1,0 +1,269 @@
+{
+  "verified_on": "2026-10-07",
+  "backend_distinct_tests_passed": 40,
+  "frontend_tests_passed": 8,
+  "backend_evidence": [
+    "coverage-tests-final.log: 40 passed in 45.24s"
+  ],
+  "frontend_build": "passed",
+  "ruff": "passed",
+  "employer_submissions_attempted": false,
+  "all_websites_unattended_supported": false,
+  "public_verification": "38/38 passed on final release",
+  "frontend_visual_verification": "Verified live employer feeds and application explanations in a disposable account; screenshot saved.",
+  "production_deployment_id": "dpl_GundtMvPdFpC7dWorJbYdrhv9ufn",
+  "production_url": "https://lakshya-job-search.vercel.app",
+  "disposable_accounts_removed": true,
+  "enabled_schedule_moved": true,
+  "background_verification": {
+    "verified_on": "2026-10-07",
+    "scheduled_cycle_status": "completed",
+    "error_present": false,
+    "source_results": [
+      {
+        "source": "scout:remoteok",
+        "status": "completed",
+        "jobs": 40
+      },
+      {
+        "source": "scout:wwr",
+        "status": "completed",
+        "jobs": 40
+      },
+      {
+        "source": "scout:himalayas",
+        "status": "completed",
+        "jobs": 40
+      },
+      {
+        "source": "scout:greenhouse",
+        "status": "completed",
+        "jobs": 40
+      },
+      {
+        "source": "scout:lever",
+        "status": "completed",
+        "jobs": 23
+      },
+      {
+        "source": "scout:ashby",
+        "status": "completed",
+        "jobs": 40
+      }
+    ],
+    "automatic_applications": {
+      "applied": 0,
+      "needs_help": 1
+    },
+    "preferences_changed": false
+  },
+  "public_checks": [
+    {
+      "feature": "Public frontend",
+      "pass": true,
+      "status": 200,
+      "seconds": 0.59
+    },
+    {
+      "feature": "Unauthenticated session gives 401, not 500",
+      "pass": true,
+      "status": 401,
+      "seconds": 0.17
+    },
+    {
+      "feature": "Unauthenticated settings protected",
+      "pass": true,
+      "status": 401,
+      "seconds": 0.14
+    },
+    {
+      "feature": "Primary account sign-up",
+      "pass": true,
+      "status": 201,
+      "seconds": 1.12
+    },
+    {
+      "feature": "Identity",
+      "pass": true,
+      "status": 200,
+      "seconds": 0.24
+    },
+    {
+      "feature": "Identity matches signed-in account",
+      "pass": true
+    },
+    {
+      "feature": "Cloud settings",
+      "pass": true,
+      "status": 200,
+      "seconds": 0.51
+    },
+    {
+      "feature": "Cloud mode enabled",
+      "pass": true
+    },
+    {
+      "feature": "Verified starter boards exposed",
+      "pass": true
+    },
+    {
+      "feature": "Resume import",
+      "pass": true,
+      "status": 200,
+      "seconds": 0.47
+    },
+    {
+      "feature": "Resume read on subsequent request",
+      "pass": true,
+      "status": 200,
+      "seconds": 0.34
+    },
+    {
+      "feature": "Resume persistence",
+      "pass": true
+    },
+    {
+      "feature": "Save preferences",
+      "pass": true,
+      "status": 200,
+      "seconds": 0.41
+    },
+    {
+      "feature": "Read preferences",
+      "pass": true,
+      "status": 200,
+      "seconds": 0.59
+    },
+    {
+      "feature": "Preference persistence",
+      "pass": true
+    },
+    {
+      "feature": "Empty application tracker",
+      "pass": true,
+      "status": 200,
+      "seconds": 0.38
+    },
+    {
+      "feature": "Excel export",
+      "pass": true,
+      "status": 200,
+      "seconds": 0.76
+    },
+    {
+      "feature": "Excel file signature",
+      "pass": true
+    },
+    {
+      "feature": "Isolated account sign-up",
+      "pass": true,
+      "status": 201,
+      "seconds": 0.72
+    },
+    {
+      "feature": "Isolated account settings",
+      "pass": true,
+      "status": 200,
+      "seconds": 1.34
+    },
+    {
+      "feature": "Other account cannot see imported resume",
+      "pass": true
+    },
+    {
+      "feature": "Other account has separate preferences",
+      "pass": true
+    },
+    {
+      "feature": "Isolated account sign-out",
+      "pass": true,
+      "status": 200,
+      "seconds": 0.23
+    },
+    {
+      "feature": "Discovery-only queue dispatch",
+      "pass": true,
+      "status": 202,
+      "seconds": 0.79
+    },
+    {
+      "feature": "Background discovery progress",
+      "pass": true,
+      "status": 200,
+      "seconds": 0.51
+    },
+    {
+      "feature": "Background discovery progress",
+      "pass": true,
+      "status": 200,
+      "seconds": 8.66
+    },
+    {
+      "feature": "Background discovery progress",
+      "pass": true,
+      "status": 200,
+      "seconds": 1.76
+    },
+    {
+      "feature": "Background discovery progress",
+      "pass": true,
+      "status": 200,
+      "seconds": 1.16
+    },
+    {
+      "feature": "Vercel Queue worker completes discovery",
+      "pass": true,
+      "status": "completed"
+    },
+    {
+      "feature": "Application eligibility explanations",
+      "pass": true,
+      "status": 200,
+      "seconds": 10.51
+    },
+    {
+      "feature": "Every discovered application has a submission policy",
+      "pass": true
+    },
+    {
+      "feature": "Sign-out",
+      "pass": true,
+      "status": 200,
+      "seconds": 0.27
+    },
+    {
+      "feature": "Session revoked",
+      "pass": true,
+      "status": 401,
+      "seconds": 0.14
+    },
+    {
+      "feature": "Wrong password rejected",
+      "pass": true,
+      "status": 401,
+      "seconds": 0.54
+    },
+    {
+      "feature": "Password sign-in",
+      "pass": true,
+      "status": 200,
+      "seconds": 9.52
+    },
+    {
+      "feature": "Resume survives sign-out and sign-in",
+      "pass": true,
+      "status": 200,
+      "seconds": 2.07
+    },
+    {
+      "feature": "Resume retained after new session",
+      "pass": true
+    },
+    {
+      "feature": "Final sign-out",
+      "pass": true,
+      "status": 200,
+      "seconds": 0.24
+    }
+  ]
+}

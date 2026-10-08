@@ -1,0 +1,54 @@
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: backend/Dockerfile
+      args:
+        INSTALL_ML: ${LAKSHYA_INSTALL_ML:-true}
+    environment:
+      LAKSHYA_API_KEY: ${LAKSHYA_API_KEY:?Run python3 scripts/setup_env.py first}
+      LAKSHYA_ENVIRONMENT: production
+      LAKSHYA_AI_PROVIDER: ${LAKSHYA_AI_PROVIDER:-}
+      LAKSHYA_CONFIG: /app/config-store/config.yaml
+      LAKSHYA_DATA_DIR: /app/data
+      LAKSHYA_OUTPUT_DIR: /app/output
+      LAKSHYA_LOG_FILE: /app/data/lakshya.jsonl
+      LAKSHYA_BROWSER_PROFILE: /app/data/browser-profile
+      GMAIL_ACCESS_TOKEN: ${GMAIL_ACCESS_TOKEN:-}
+      LAKSHYA_DATABASE_URL: sqlite:////app/data/lakshya.sqlite3
+      LAKSHYA_LOG_LEVEL: ${LAKSHYA_LOG_LEVEL:-INFO}
+      ANTHROPIC_API_KEY: ${ANTHROPIC_API_KEY:-}
+      GEMINI_API_KEY: ${GEMINI_API_KEY:-}
+      HF_HOME: /app/data/huggingface
+      LAKSHYA_COOKIE_SECURE: ${LAKSHYA_COOKIE_SECURE:-false}
+      ADZUNA_APP_ID: ${ADZUNA_APP_ID:-}
+      ADZUNA_APP_KEY: ${ADZUNA_APP_KEY:-}
+    ports:
+      - "127.0.0.1:${LAKSHYA_API_PORT:-8000}:8000"
+    volumes:
+      - lakshya_data:/app/data
+      - lakshya_output:/app/output
+      - lakshya_config:/app/config-store
+    healthcheck:
+      test: [CMD, python, -c, "import urllib.request; urllib.request.urlopen('http://localhost:8000/health')"]
+      interval: 10s
+      timeout: 5s
+      start_period: 60s
+      retries: 5
+    restart: unless-stopped
+  frontend:
+    build:
+      context: ./frontend
+    ports:
+      - "127.0.0.1:${LAKSHYA_WEB_PORT:-8080}:80"
+    depends_on:
+      backend:
+        condition: service_healthy
+    restart: unless-stopped
+volumes:
+  lakshya_data:
+    name: lakshya_live_data
+  lakshya_output:
+    name: lakshya_live_output
+  lakshya_config:
+    name: lakshya_live_config

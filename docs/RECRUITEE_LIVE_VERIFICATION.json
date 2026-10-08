@@ -1,0 +1,14 @@
+{
+  "checked_at": "2026-10-07T08:58:23.141966+00:00",
+  "live_feed": "https://metyisag.recruitee.com/api/feeds/offers.xml",
+  "normalized_openings": 71,
+  "matching_default_preferences": 0,
+  "fresh_matching_default_preferences": 0,
+  "inspected_form": "https://metyisag.recruitee.com/o/data-science-principal-3/c/new",
+  "radio_questions_read": 5,
+  "planned_uploads_deferred": 2,
+  "unanswered_questions_pause": true,
+  "external_write_requests_allowed": 0,
+  "blocked_non_read_requests": 0,
+  "employer_application_submitted": false
+}

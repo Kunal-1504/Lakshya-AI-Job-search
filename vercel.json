@@ -1,0 +1,108 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "regions": [
+    "sin1"
+  ],
+  "services": {
+    "frontend": {
+      "root": "frontend",
+      "framework": "vite",
+      "buildCommand": "npm run build",
+      "outputDirectory": "dist",
+      "rewrites": [
+        {
+          "source": "/((?!assets/).*)",
+          "destination": "/index.html"
+        }
+      ]
+    },
+    "backend": {
+      "root": ".",
+      "runtime": "container",
+      "entrypoint": "Dockerfile.vercel"
+    },
+    "api": {
+      "root": "cloud-gateway",
+      "framework": "express",
+      "entrypoint": "server.mjs",
+      "bindings": [
+        {
+          "type": "service",
+          "service": "backend",
+          "format": "url",
+          "env": "LAKSHYA_BACKEND_URL"
+        }
+      ],
+      "functions": {
+        "server.mjs": {
+          "maxDuration": 300
+        }
+      }
+    },
+    "worker": {
+      "root": "cloud-gateway",
+      "framework": "express",
+      "entrypoint": "worker.mjs",
+      "bindings": [
+        {
+          "type": "service",
+          "service": "backend",
+          "format": "url",
+          "env": "LAKSHYA_BACKEND_URL"
+        }
+      ],
+      "functions": {
+        "worker.mjs": {
+          "maxDuration": 300,
+          "experimentalTriggers": [
+            {
+              "type": "queue/v2beta",
+              "topic": "lakshya-work",
+              "retryAfterSeconds": 60,
+              "maxDeliveries": 20
+            }
+          ]
+        }
+      }
+    }
+  },
+  "rewrites": [
+    {
+      "source": "/api/(.*)",
+      "destination": {
+        "service": "api"
+      }
+    },
+    {
+      "source": "/(.*)",
+      "destination": {
+        "service": "frontend"
+      }
+    }
+  ],
+  "crons": [
+    {
+      "path": "/api/cloud-recover",
+      "schedule": "0 3 * * *"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "DENY"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        }
+      ]
+    }
+  ]
+}
